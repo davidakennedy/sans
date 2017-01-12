@@ -1,0 +1,147 @@
+/*
+Theme Name: Sans
+
+Adding support for language written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+https://codex.wordpress.org/Right_to_Left_Languagecomponentsupport
+
+*/
+
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+textarea {
+	padding-left: 0;
+	padding-right: 3px;
+}
+
+.screen-reader-text:focus {
+	left: auto;
+	right: 5px;
+}
+
+/* 500px */
+@media screen and (min-width: 31.25em) {
+	.alignleft {
+		float: right;
+		margin-left: 1.45em;
+		margin-right: auto;
+	}
+
+	.alignright {
+		float: left;
+		margin-left: auto;
+		margin-right: 1.45em;
+	}
+
+	.aligncenter {
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+blockquote {
+	border-right: 2px solid #eee;
+	padding-left: 0;
+	padding-right: 8px;
+}
+
+table {
+	border-width: 1px 1px 0 0;
+}
+
+caption,
+th,
+td {
+	text-align: right;
+}
+
+th {
+	border-width: 0 0 1px 1px;
+}
+
+td {
+	border-width: 0 0 1px 1px;
+}
+
+ ul,
+ol {
+	margin: 0 1.45em 1.45em 0;
+}
+
+li > ul,
+li > ol {
+	margin-left: auto;
+	margin-right: 1.45em;
+}
+
+.main-navigation li {
+	float: right;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float: right;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+	float: left;
+	text-align: left;
+}
+
+/* 400px */
+@media screen and (min-width: 25em) {
+	.site-footer .widget-area .widget {
+		float: right;
+		margin-right: 0;
+		margin-left: 6%;
+	}
+
+	.site-footer .widget-area .widget:nth-child(2n+3) {
+		clear: right
+	}
+
+	.site-footer .widget-area .widget:nth-child(2n) {
+		margin-left: 0;
+	}
+}
+
+.sticky .featured {
+	float: left;
+}
+
+.blog .sticky .posted-on,
+.blog .sticky .byline {
+	float: right;
+}
+
+.cat-links,
+.tags-links,
+.comments-link,
+.edit-link {
+	margin-left: 0.725em;
+	margin-right: auto;
+}
+
+.comment-metadata span{
+	margin:0 1.45em 0 0;
+}
+
+@media screen and (min-width:31.25em) {
+	.comment-metadata,
+	.comment-content,
+	.reply {
+		float:left;
+	}
+	.comment-author {
+		float:right;
+		margin-left:6%;
+	}
+}
