@@ -1604,7 +1604,7 @@ html {
 }
 
 /* Jetpack subscriptions */
-.comment-subscription-form {
+.site .comment-subscription-form {
 	font-size: 14px;
 	font-size: 0.875rem;
 	margin-bottom: 0.725em;
