@@ -916,6 +916,11 @@ input[type="submit"]:active,
 	margin-bottom: 1.45em;
 }
 
+/* Jetpack forms */
+.contact-form label span {
+	color: #737373;
+}
+
 /*--------------------------------------------------------------
 # Formattings
 --------------------------------------------------------------*/
