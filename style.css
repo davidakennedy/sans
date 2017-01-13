@@ -1149,7 +1149,8 @@ h6 a:active {
 .entry-meta a,
 .entry-footer a,
 .comment-metadata a,
-.edit-link a {
+.edit-link a,
+.logged-in-as a {
 	color: #737373;
 	box-shadow: 0 1px 0 0 #737373;
 }
@@ -1166,6 +1167,9 @@ h6 a:active {
 .entry-content a:hover,
 .entry-content a:focus,
 .entry-content a:active,
+.logged-in-as a:hover,
+.logged-in-as a:focus,
+.logged-in-as a:active,
 .comment-content a:hover,
 .comment-content a:focus,
 .comment-content a:active,
@@ -1575,6 +1579,14 @@ html {
 	margin-bottom: 0.3625em;
 }
 
+.logged-in-as {
+	color: #737373;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-style: italic;
+}
+}
+
 .comment-form input[type="text"],
 .comment-form input[type="email"],
 .comment-form input[type="url"],
@@ -1590,7 +1602,10 @@ html {
 	font-size: 0.75rem;
 }
 
+/* Jetpack subscriptions */
 .comment-subscription-form {
+	font-size: 14px;
+	font-size: 0.875rem;
 	margin-bottom: 0.725em;
 }
 
