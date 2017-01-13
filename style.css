@@ -1408,6 +1408,13 @@ html {
 	margin-right: 0.725em;
 }
 
+/* Jetpack related posts */
+.site .entry-content .jp-relatedposts a:hover,
+.site .entry-content .jp-relatedposts a:active,
+.site .entry-content .jp-relatedposts a:focus {
+	text-decoration: none;
+}
+
 /*--------------------------------------------------------------
 ## Pages
 --------------------------------------------------------------*/
