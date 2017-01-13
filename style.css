@@ -1219,6 +1219,8 @@ html {
 .custom-logo-link {
 	display: inline-block;
 	margin-bottom: 1.45em;
+	text-align: center;
+	width: 100%;
 }
 
 .custom-logo-link img {
