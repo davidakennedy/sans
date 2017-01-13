@@ -917,7 +917,7 @@ input[type="submit"]:active,
 }
 
 /* Jetpack forms */
-.contact-form label span {
+.site .contact-form label span {
 	color: #737373;
 }
 
