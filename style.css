@@ -602,35 +602,35 @@ h5,
 h6 {
 	clear: both;
 	color: #000000;
-	line-height: 1.2;
+	line-height: 1.25;
 	margin: 0 0 0.5em;
 	word-wrap: break-word;
 }
 
 h1 {
-	font-size: 32.432px;
-	font-size: 2.027rem;
-	line-height: 1.266;
+	font-size: 32px;
+	font-size: 2rem;
+	line-height: 1.25;
 }
 
 h2 {
-	font-size: 28.832px;
-	font-size: 1.802rem;
+	font-size: 29px;
+	font-size: 1.8125rem;
 }
 
 h3 {
-	font-size: 25.632px;
-	font-size: 1.602rem;
+	font-size: 26px;
+	font-size: 1.625rem;
 }
 
 h4 {
-	font-size: 22.784px;
-	font-size: 1.424rem;
+	font-size: 23px;
+	font-size: 1.4375rem;
 }
 
 h5 {
-	font-size: 20.256px;
-	font-size: 1.266rem;
+	font-size: 20px;
+	font-size: 1.25rem;
 }
 
 h6 {
@@ -647,7 +647,7 @@ h4 + h5,
 h5 + h5,
 h5 + h6,
 h6 + h6 {
-	 margin-top: 1.414em;
+	 margin-top: 1.4em;
  }
 
 
@@ -679,11 +679,11 @@ pre {
 	font-family: "Courier 10 Pitch", Courier, monospace;
 	font-size: 15px;
 	font-size: 0.9375rem;
-	line-height: 1.65;
-	margin-bottom: 1.65em;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
 	max-width: 100%;
 	overflow: auto;
-	padding: 1.65em;
+	padding: 1.6em;
 }
 
 code,
@@ -1243,11 +1243,10 @@ html {
 				Cantarell,
 				"Helvetica Neue",
 				sans-serif;
-	font-size: 41.056px;
-	font-size: 2.566rem;
+	font-size: 46px;
+	font-size: 2.875rem;
 	font-weight: 700;
-	line-height: 1.266;
-	line-height: 1.2;
+	line-height: 1.25;
 	margin: 0 0 0.25em;
 }
 
@@ -1328,6 +1327,11 @@ html {
 .page-title {
 	font-size: 18px;
 	font-size: 1.125rem;
+}
+
+.entry-title {
+	font-size: 36px;
+	font-size: 2.25rem;
 }
 
 .blog .sticky {
@@ -1422,8 +1426,8 @@ html {
 }
 
 .comments-title {
-	font-size: 25.632px;
-	font-size: 1.602rem;
+	font-size: 26px;
+	font-size: 1.625rem;
 }
 
 .comment-notes {
