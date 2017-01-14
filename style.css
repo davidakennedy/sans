@@ -482,7 +482,7 @@ template {
 	display: block;
 	font-size: 14px;
 	font-size: 0.875rem;
-	font-weight: bold;
+	font-weight: 700;
 	height: auto;
 	left: 5px;
 	line-height: normal;
@@ -746,7 +746,7 @@ td {
 
 th {
 	border-width: 0 1px 1px 0;
-	font-weight: 700;
+	font-weight: 600;
 }
 
 td {
@@ -880,7 +880,7 @@ input[type="submit"],
 	cursor: pointer;
 	font-size: 16px;
 	font-size: 1rem;
-	font-weight: bold;
+	font-weight: 700;
 	padding: 0.2465em 0;
 	-webkit-transition: box-shadow 0.2s;
 	transition: box-shadow 0.2s;
@@ -955,7 +955,7 @@ li > ol {
 }
 
 dt {
-	font-weight: bold;
+	font-weight: 700;
 }
 
 dd {
@@ -1412,12 +1412,32 @@ html {
 	margin-right: 0.725em;
 }
 
-/* Jetpack related posts */
+/* Jetpack sharedaddy and related posts */
+.site div.sharedaddy h3.sd-title,
+.site #jp-relatedposts h3.jp-relatedposts-headline {
+	font-size: 12px;
+	font-size: 0.75rem;
+	font-weight: 600;
+}
+
 .site #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title a:hover,
 .site #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title a:focus,
 .site #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title a:active,
 .site #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post:hover .jp-relatedposts-post-title a {
 	text-decoration: none;
+}
+
+.site #jp-relatedposts .jp-relatedposts-items p,
+.site #jp-relatedposts .jp-relatedposts-items-visual h4.jp-relatedposts-post-title {
+	font-size: 14px;
+	font-size: 0.875rem;
+	line-height: 1.45;
+}
+
+.site #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-context,
+.site #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-date {
+	color: #737373;
+	opacity: 1;
 }
 
 /*--------------------------------------------------------------
@@ -1483,7 +1503,7 @@ html {
 .pingback {
 	font-size: 14px;
 	font-size: 0.875rem;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .pingback .comment-body {
@@ -1523,7 +1543,7 @@ html {
 .comment-author {
 	display: block;
 	font-style: italic;;
-	font-weight: bold;
+	font-weight: 700;
 	width: 100%;
 }
 
