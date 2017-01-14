@@ -779,7 +779,7 @@ td {
 
 /* Add drop caps in supported browsers. */
 @supports (initial-letter: 1) or (-webkit-initial-letter: 1) {
-	.entry-content > p:first-of-type::first-letter {
+	.single .entry-content > p:not(.intro):first-of-type::first-letter {
 		initial-letter: 2;
 		-webkit-initial-letter: 2;
 		margin-bottom: 2.9em;
