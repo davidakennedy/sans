@@ -1112,8 +1112,9 @@ a {
 	transition: box-shadow 0.2s;
 }
 
-.textwidget a,
 .entry-content a,
+.entry-summary a,
+.textwidget a,
 .comment-content a,
 .site-footer a {
 	box-shadow: 0 1px 0 0 #000000;
@@ -1161,21 +1162,24 @@ h6 a:active {
 .entry-footer a:hover,
 .entry-footer a:focus,
 .entry-footer a:active,
-.textwidget a:hover,
-.textwidget a:focus,
-.textwidget a:active,
 .entry-content a:hover,
 .entry-content a:focus,
 .entry-content a:active,
-.logged-in-as a:hover,
-.logged-in-as a:focus,
-.logged-in-as a:active,
+.entry-summary a:hover,
+.entry-summary a:focus,
+.entry-summary a:active,
+.textwidget a:hover,
+.textwidget a:focus,
+.textwidget a:active,
 .comment-content a:hover,
 .comment-content a:focus,
 .comment-content a:active,
 .comment-metadata a:hover,
 .comment-metadata a:focus,
 .comment-metadata a:active,
+.logged-in-as a:hover,
+.logged-in-as a:focus,
+.logged-in-as a:active,
 .site-footer a:hover,
 .site-footer a:focus,
 .site-footer a:active {
