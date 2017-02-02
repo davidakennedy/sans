@@ -1335,6 +1335,13 @@ html {
 	font-size: 1.125rem;
 }
 
+.taxonomy-description {
+	color: #737373;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-style: italic;
+}
+
 .entry-title {
 	font-size: 36px;
 	font-size: 2.25rem;
