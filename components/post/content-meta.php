@@ -7,5 +7,9 @@
 
 ?>
 <div class="entry-meta">
-	<?php sans_posted_on(); ?>
+	<?php if ( is_single() || is_search() ) {
+		sans_posted_on();
+	} else {
+		sans_entry_date();
+	} ?>
 </div><!-- .entry-meta -->

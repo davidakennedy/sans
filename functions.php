@@ -44,8 +44,8 @@ if ( ! function_exists( 'sans_setup' ) ) :
 		 * Add support for core custom logo.
 		 */
 		add_theme_support( 'custom-logo', array(
-			'height'      => 100,
-			'width'       => 100,
+			'height'      => 50,
+			'width'       => 50,
 		) );
 
 		/*
@@ -84,7 +84,7 @@ add_action( 'wp_head', 'sans_javascript_detection', 0 );
  * @global int $content_width
  */
 function sans_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'sans_content_width', 500 );
+	$GLOBALS['content_width'] = apply_filters( 'sans_content_width', 727 );
 }
 add_action( 'after_setup_theme', 'sans_content_width', 0 );
 
@@ -110,42 +110,25 @@ add_action( 'widgets_init', 'sans_widgets_init' );
  * Enqueue scripts and styles.
  */
 function sans_scripts() {
-	wp_enqueue_style( 'sans-fonts', sans_fonts_url(), array(), null );
+	if ( WP_DEBUG || SCRIPT_DEBUG ) {
+		wp_enqueue_style( 'sans-theme', get_template_directory_uri() . '/assets/css/style.css' );
 
-	wp_enqueue_style( 'sans-style', get_stylesheet_uri() );
+		wp_enqueue_script( 'sans-main', get_template_directory_uri() . '/assets/js/main.js', array(), '1.0', true );
 
-	wp_enqueue_script( 'sans-main', get_template_directory_uri() . '/assets/js/main.js', array(), '1.0', true );
+		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+			wp_enqueue_script( 'comment-reply' );
+		}
+	} else {
+		wp_enqueue_style( 'sans-theme', get_stylesheet_uri() );
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
+		wp_enqueue_script( 'sans-main', get_template_directory_uri() . '/assets/js/main.min.js', array(), '1.0', true );
+
+		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+			wp_enqueue_script( 'comment-reply' );
+		}
 	}
 }
 add_action( 'wp_enqueue_scripts', 'sans_scripts' );
-
-/**
- * Register Google Fonts
- */
-function sans_fonts_url() {
-	$fonts_url = '';
-
-	/**
-	 * Translators: If there are characters in your language that are not
-	 * supported by Inconsolata, translate this to 'off'. Do not translate
-	 * into your own language.
-	 */
-	$inconsolata = esc_html_x( 'on', 'Inconsolata font: on or off', 'sans' );
-
-	if ( 'off' !== $inconsolata ) {
-		$font_families[] = 'Inconsolata:400,700';
-		$query_args = array(
-			'family' => urlencode( implode( '|', $font_families ) ),
-			'subset' => urlencode( 'latin,latin-ext' ),
-		);
-			$fonts_url = add_query_arg( $query_args, 'https://fonts.googleapis.com/css' );
-	}
-
-	return $fonts_url;
-}
 
 /**
  * Custom template tags for this theme.

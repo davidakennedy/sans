@@ -7,6 +7,41 @@
  * @package Sans
  */
 
+if ( ! function_exists( 'sans_entry_date' ) ) :
+	/**
+	 * Prints HTML with meta information for the current post-date/time and author.
+	 */
+	function sans_entry_date() {
+		$sticky = sprintf(
+			esc_html__( '%s Featured', 'sans' ),
+			'<span class="sticky-star">&#9733;</span>'
+		);
+
+		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
+		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
+			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
+		}
+
+		$time_string = sprintf( $time_string,
+			esc_attr( get_the_date( 'c' ) ),
+			esc_html( get_the_date() ),
+			esc_attr( get_the_modified_date( 'c' ) ),
+			esc_html( get_the_modified_date() )
+		);
+
+		if ( is_sticky() && is_home() ) {
+			echo '<span class="featured">' . $sticky . '</span>'; // WPCS: XSS OK.
+		}
+
+		printf( '<span class="posted-on"><span class="screen-reader-text">%1$s </span><a href="%2$s" rel="bookmark">%3$s</a></span>',
+			esc_html_x( 'Posted on', 'Used before publish date.', 'sans' ),
+			esc_url( get_permalink() ),
+			$time_string
+		);
+
+	}
+endif;
+
 if ( ! function_exists( 'sans_posted_on' ) ) :
 	/**
 	 * Prints HTML with meta information for the current post-date/time and author.
@@ -134,18 +169,23 @@ if ( ! function_exists( 'sans_footer_credits' ) ) :
 	 * Adds footer credits, including credits, copyright and quotes.
 	 */
 	function sans_footer_credits() {
-		$credits = sprintf(
-			esc_html__( 'Made with %1$s &amp; %2$s', 'sans' ),
-			'<a href="' . esc_url( 'https://wordpress.org' ) . '">' . 'WordPress' . '</a>',
-			'<a href="' . esc_url( 'https://github.com/davidakennedy/sans' ) . '">' . 'Sans' . '</a>.'
-		);
 		$copyright = esc_html( '&copy; 2009 - ' . date( 'Y ' ) . __( 'David A. Kennedy.', 'sans' ) );
+		$credits = sprintf(
+			esc_html__( 'View %1$s', 'sans' ),
+			'<a href="' . esc_url( 'https://github.com/davidakennedy/sans' ) . '">' . 'source' . '</a>.'
+		);
 		$quotes = array(
 			esc_html__( 'Go Gators!', 'sans' ),
+			esc_html__( 'Let&lsquo;s go Magic!', 'sans' ),
 			esc_html__( 'Probably eating a pb&amp;j.', 'sans' ),
+			esc_html__( 'Looking for tacos.', 'sans' ),
+			esc_html__( 'Drinking a good ale.', 'sans' ),
 			esc_html__( 'Doing some burpees.', 'sans' ),
 			esc_html__( 'Need moar video games.', 'sans' ),
+			esc_html__( 'Penning a first draft.', 'sans' ),
 		);
-		echo '<div class="credits">' . $credits . '</div><div class="copyright">' . $copyright . '</div><div class="quotes">' . $quotes[ rand( 0, count( $quotes ) - 1 ) ] . '</div>'; /* WPCS: xss ok. */
+		$content = '<small><span class="stuff-and-things">' . $copyright . ' ' . $credits . ' ' . '<span class="quotes">' . $quotes[ rand( 0, count( $quotes ) - 1 ) ] . '</span></span></small>';
+		echo $content; /* WPCS: xss ok. */
+		return $content;
 	}
 endif;

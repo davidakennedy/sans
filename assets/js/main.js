@@ -5,7 +5,7 @@
  */
 (function() {
 	/**
-	 * Helps with accessibility for keyboard only users.
+	 * Helps with accessibility for keyboard-only users.
 	 *
 	 * Learn more: https://git.io/vWdr2
 	 */
