@@ -110,7 +110,7 @@ add_action( 'widgets_init', 'sans_widgets_init' );
  * Enqueue scripts and styles.
  */
 function sans_scripts() {
-	if ( WP_DEBUG || SCRIPT_DEBUG ) {
+	if ( true === WP_DEBUG ) {
 		wp_enqueue_style( 'sans-theme', get_template_directory_uri() . '/assets/css/style.css' );
 
 		wp_enqueue_script( 'sans-main', get_template_directory_uri() . '/assets/js/main.js', array(), '1.0', true );
