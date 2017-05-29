@@ -4,8 +4,8 @@ Contributors: davidakennedy
 Tags: one-column, blog, accessibility-ready, custom-menu, custom-logo, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready
 
 Requires at least: 4.7
-Tested up to: 4.7.3
-Stable tag: 2.0.0
+Tested up to: 4.8
+Stable tag: 3.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +30,9 @@ Sans includes support for Jetpack's Infinite Scroll as well as other features.
 Yep, you'll probably want to edit the `sans_footer_credits()` function in `inc/template-tags.php`. It has my name, copyright and some silly quotes. Remove or replace those with your own silly content. :)
 
 == Changelog ==
+
+= 3.0 - May 28, 2017 =
+* Initial release
 
 = 2.0 - March 8, 2017 =
 * Initial release
