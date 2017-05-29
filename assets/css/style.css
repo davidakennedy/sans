@@ -1097,17 +1097,6 @@ table {
 	}
 }
 
-/* 1000px */
-@media (min-width: 62.5em) {
-	.main-navigation {
-		text-align: right;
-	}
-
-	.main-navigation li {
-		display: list-item;
-	}
-}
-
 /*--------------------------------------------------------------
 # Links
 --------------------------------------------------------------*/
@@ -1259,22 +1248,15 @@ html {
 /* One simple column, what layout? */
 .site {
 	margin: 6% auto;
-	padding: 0 1.12em;
-	max-width: 38.8888888889em; /* 700px */
-}
-
-/* 1000px */
-@media (min-width: 62.5em) {
-	.site {
-		max-width: 60em;
-	}
+	max-width: 40em; /* 720px */
+	width: 90%;
 }
 
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
 .site-header {
-	margin-bottom: 6%;
+	margin-bottom: 12%;
 	text-align: center;
 }
 
@@ -1285,6 +1267,8 @@ html {
 
 .custom-logo-link img {
 	border-radius: 50%;
+	height: 80px;
+	width: 80px;
 }
 
 .site-branding {
@@ -1292,10 +1276,10 @@ html {
 }
 
 .site-title {
-	font-size: 1.602em;
+	font-size: 1.802em;
 	font-weight: 600;
 	line-height: 1.25;
-	margin: 0 0 0.5em;
+	margin: 0;
 }
 
 .site-description {
@@ -1303,21 +1287,6 @@ html {
 	font-size: 0.77777777777em;
 	font-style: italic;
 	margin-bottom: 0;
-}
-
-/* 1000px Header to the left, content to the right. */
-@media (min-width: 62.5em) {
-	.site-header {
-		float: left;
-		margin-right: 6%;
-		text-align: right;
-		width: 24%;
-	}
-
-	.site-title {
-		font-size: 1.266em;
-		margin: 0;
-	}
 }
 
 /*--------------------------------------------------------------
@@ -1330,6 +1299,7 @@ html {
 .site-info {
 	color: #737373;
 	font-size: 0.88888888888em;
+	margin-top: 6%;
 }
 
 .quotes {
@@ -1340,15 +1310,6 @@ html {
 @media (min-width: 31.25em) {
 	.site-info {
 		text-align: center;
-	}
-}
-
-/* 1000px Header to the left, content to the right. */
-@media (min-width: 62.5em) {
-	.site-footer {
-		clear: right;
-		float: right;
-		width: 70%;
 	}
 }
 
@@ -1610,6 +1571,10 @@ html {
 	padding-top: 6%;
 }
 
+.comments-area > .comment-respond:first-child {
+	padding-top: 0;
+}
+
 .comment-form label {
 	display: block;
 	width: 100%;
@@ -1745,14 +1710,6 @@ html {
 
 .site #infinite-handle span button {
 	font-size: 0.88888888888em;
-}
-
-/* 1000px Header to the left, content to the right. */
-@media (min-width: 62.5em) {
-	.site-content {
-		float: right;
-		width: 70%;
-	}
 }
 
 /*--------------------------------------------------------------

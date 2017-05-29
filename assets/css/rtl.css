@@ -88,28 +88,6 @@ li > ul {
 	text-align: left;
 }
 
-@media (min-width: 62.5em) {
-	.site-header {
-		float: right;
-		margin-left: 6%;
-		margin-right: 0;
-		text-align: left;
-	}
-
-	.site-footer {
-		clear: left;
-		float: left;
-	}
-
-	.site-content {
-		float: left;
-	}
-
-	.main-navigation {
-		text-align: left;
-	}
-}
-
 .cat-links,
 .comments-link,
 .edit-link,

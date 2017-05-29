@@ -44,8 +44,8 @@ if ( ! function_exists( 'sans_setup' ) ) :
 		 * Add support for core custom logo.
 		 */
 		add_theme_support( 'custom-logo', array(
-			'height'      => 50,
-			'width'       => 50,
+			'height'      => 160,
+			'width'       => 160,
 		) );
 
 		/*
@@ -84,7 +84,7 @@ add_action( 'wp_head', 'sans_javascript_detection', 0 );
  * @global int $content_width
  */
 function sans_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'sans_content_width', 727 );
+	$GLOBALS['content_width'] = apply_filters( 'sans_content_width', 720 );
 }
 add_action( 'after_setup_theme', 'sans_content_width', 0 );
 
