@@ -465,7 +465,7 @@ template {
 }
 
 .screen-reader-text:focus {
-	background-color: #f1f1f1;
+	background: #f1f1f1;
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	clip: auto !important;
 	color: #0073aa;
@@ -570,6 +570,7 @@ template {
 # Typography
 --------------------------------------------------------------*/
 body {
+	background: #ffffff;
 	font-size: 1.125em;
 }
 
@@ -919,7 +920,7 @@ input[type="submit"]:active,
 # Formattings
 --------------------------------------------------------------*/
 hr {
-	background-color: #eeeeee;
+	background: #eeeeee;
 	border: 0;
 	height: 1px;
 	margin-bottom: 1.5em;
