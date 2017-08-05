@@ -32,13 +32,13 @@ Yep, you'll probably want to edit the `sans_footer_credits()` function in `inc/t
 == Changelog ==
 
 = 3.0 - May 28, 2017 =
-* Initial release
+* Back to one column. :)
 
 = 2.0 - March 8, 2017 =
-* Initial release
+* Design tweaks. :O
 
 = 1.0 - January 9, 2017 =
-* Initial release
+* Initial release. :D
 
 == Credits ==
 
