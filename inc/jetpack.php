@@ -34,11 +34,11 @@ add_action( 'after_setup_theme', 'sans_jetpack_setup' );
 function sans_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
-		if ( is_search() ) :
+		if ( is_search() ) {
 			get_template_part( 'components/post/content', 'search' );
-		else :
+		} else {
 			get_template_part( 'components/post/content', get_post_format() );
-		endif;
+		}
 	}
 }
 
