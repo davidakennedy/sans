@@ -886,8 +886,8 @@ input[type="reset"]:hover,
 input[type="submit"]:hover,
 .site #infinite-handle span button:hover,
 .comment-reply-link:hover {
-	box-shadow: 0 4px 0 0 #006080;
-	color: #006080;
+	box-shadow: 0 4px 0 0 #0068ee;
+	color: #0068ee;
 }
 
 button:focus,
@@ -902,8 +902,8 @@ input[type="reset"]:active,
 input[type="submit"]:active,
 .site #infinite-handle span button:active,
 .comment-reply-link:active {
-	box-shadow: 0 4px 0 0 #006080;
-	color: #006080;
+	box-shadow: 0 4px 0 0 #0068ee;
+	color: #0068ee;
 	outline: none;
 }
 
@@ -1028,7 +1028,7 @@ table {
 .site-main .post-navigation a:hover,
 .site-main .post-navigation a:focus,
 .site-main .post-navigation a:active {
-	color: #006080;
+	color: #0068ee;
 }
 
 .comment-navigation .nav-previous,
@@ -1071,7 +1071,7 @@ table {
 .post-navigation a:hover .meta-nav,
 .post-navigation a:focus .meta-nav,
 .post-navigation a:active .meta-nav {
-	color: #006080;
+	color: #0068ee;
 }
 
 /* 500px */
@@ -1102,7 +1102,7 @@ table {
 # Links
 --------------------------------------------------------------*/
 a {
-	color: #006080;
+	color: #0068ee;
 	text-decoration: none;
 	-webkit-transition: box-shadow 0.2s;
 	transition: box-shadow 0.2s;
@@ -1114,13 +1114,13 @@ a {
 .textwidget a,
 .comment-content a,
 .site-footer a {
-	box-shadow: 0 1px 0 0 #006080;
+	box-shadow: 0 1px 0 0 #0068ee;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: #006080;
+	color: #0068ee;
 }
 
 h1 a,
@@ -1154,13 +1154,13 @@ h5 a:active,
 h6 a:hover,
 h6 a:focus,
 h6 a:active {
-	color: #006080;
+	color: #0068ee;
 }
 
 .site-title a:hover,
 .site-title a:focus,
 .site-title a:active {
-	color: #006080;
+	color: #0068ee;
 }
 
 .entry-meta a,
@@ -1542,12 +1542,12 @@ html {
 }
 
 .bypostauthor > .comment-body > .comment-meta > .comment-author > .avatar {
-	border: 2px solid #006080;
+	border: 2px solid #0068ee;
 	border-radius: 50%;
 }
 
 .bypostauthor > .comment-body > .comment-meta > .comment-author > .fn {
-	border: 2px solid #006080;
+	border: 2px solid #0068ee;
 	display: block;
 	padding: 0.22222222222em;
 }
