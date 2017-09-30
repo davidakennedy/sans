@@ -164,11 +164,13 @@ function sans_category_transient_flusher() {
 add_action( 'edit_category', 'sans_category_transient_flusher' );
 add_action( 'save_post',     'sans_category_transient_flusher' );
 
-if ( ! function_exists( 'sans_footer_credits' ) ) :
+if ( ! function_exists( 'sans_get_footer_credits' ) ) :
 	/**
 	 * Adds footer credits, including credits, copyright and quotes.
+	 *
+	 * @return string
 	 */
-	function sans_footer_credits() {
+	function sans_get_footer_credits() {
 		$copyright = esc_html( '&copy; 2009 - ' . date( 'Y ' ) . __( 'David A. Kennedy.', 'sans' ) );
 		$credits = sprintf(
 			esc_html__( 'View %1$s', 'sans' ),
@@ -185,7 +187,15 @@ if ( ! function_exists( 'sans_footer_credits' ) ) :
 			esc_html__( 'Penning a first draft.', 'sans' ),
 		);
 		$content = '<small><span class="stuff-and-things">' . $copyright . ' ' . $credits . ' ' . '<span class="quotes">' . $quotes[ rand( 0, count( $quotes ) - 1 ) ] . '</span></span></small>';
-		echo $content; /* WPCS: xss ok. */
 		return $content;
 	}
 endif;
+
+/**
+ * Prints footer credits.
+ *
+ * @see sans_footer_credits()
+ */
+function sans_the_footer_credits() {
+	echo sans_get_footer_credits();
+}

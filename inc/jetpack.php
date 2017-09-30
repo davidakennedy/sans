@@ -46,6 +46,6 @@ function sans_infinite_scroll_render() {
  * Custom filter to replace footer credits for Infinite Scroll.
  **/
 function sans_infinite_scroll_credits() {
-	return sans_footer_credits();
+	return sans_get_footer_credits();
 }
 add_filter( 'infinite_scroll_credit', 'sans_infinite_scroll_credits' );
