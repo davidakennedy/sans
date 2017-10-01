@@ -4,7 +4,7 @@ Theme URI: https://github.com/davidakennedy/sans
 Author: David A. Kennedy
 Author URI: http://davidakennedy.com
 Description: A minimalist theme with substance and without the superficial.
-Version: 3.0.0
+Version: 3.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: sans
@@ -879,8 +879,8 @@ input[type="reset"]:hover,
 input[type="submit"]:hover,
 .site #infinite-handle span button:hover,
 .comment-reply-link:hover {
-	box-shadow: 0 4px 0 0 #0068ee;
-	color: #0068ee;
+	box-shadow: 0 4px 0 0 #1874cd;
+	color: #1874cd;
 }
 
 button:focus,
@@ -895,8 +895,8 @@ input[type="reset"]:active,
 input[type="submit"]:active,
 .site #infinite-handle span button:active,
 .comment-reply-link:active {
-	box-shadow: 0 4px 0 0 #0068ee;
-	color: #0068ee;
+	box-shadow: 0 4px 0 0 #1874cd;
+	color: #1874cd;
 	outline: none;
 }
 
@@ -990,12 +990,12 @@ table {
 .main-navigation a:hover,
 .main-navigation a:focus,
 .main-navigation a:active {
-	box-shadow: 0 1px 0 0 #0068ee;
+	box-shadow: 0 1px 0 0 #1874cd;
 }
 
 .main-navigation .current-menu-item > a,
 .main-navigation .current-menu-ancestor > a {
-	box-shadow: 0 1px 0 0 #0068ee
+	box-shadow: 0 1px 0 0 #1874cd
 }
 
 .site-main .comment-navigation,
@@ -1024,7 +1024,7 @@ table {
 .site-main .post-navigation a:hover,
 .site-main .post-navigation a:focus,
 .site-main .post-navigation a:active {
-	color: #0068ee;
+	color: #1874cd;
 }
 
 .comment-navigation .nav-previous,
@@ -1067,7 +1067,7 @@ table {
 .post-navigation a:hover .meta-nav,
 .post-navigation a:focus .meta-nav,
 .post-navigation a:active .meta-nav {
-	color: #0068ee;
+	color: #1874cd;
 }
 
 /* 500px */
@@ -1098,7 +1098,7 @@ table {
 # Links
 --------------------------------------------------------------*/
 a {
-	color: #0068ee;
+	color: #1874cd;
 	text-decoration: none;
 	-webkit-transition: box-shadow 0.2s;
 	transition: box-shadow 0.2s;
@@ -1110,13 +1110,13 @@ a {
 .textwidget a,
 .comment-content a,
 .site-footer a {
-	box-shadow: 0 1px 0 0 #0068ee;
+	box-shadow: 0 1px 0 0 #1874cd;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: #0068ee;
+	color: #1874cd;
 }
 
 h1 a,
@@ -1150,13 +1150,13 @@ h5 a:active,
 h6 a:hover,
 h6 a:focus,
 h6 a:active {
-	color: #0068ee;
+	color: #1874cd;
 }
 
 .site-title a:hover,
 .site-title a:focus,
 .site-title a:active {
-	color: #0068ee;
+	color: #1874cd;
 }
 
 .entry-meta a,
@@ -1274,7 +1274,7 @@ html {
 
 .site-title {
 	font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
-	font-size: 1.802em;
+	font-size: 2.566em;
 	font-weight: 700;
 	line-height: 1.25;
 	margin: 0;
@@ -1539,12 +1539,12 @@ html {
 }
 
 .bypostauthor > .comment-body > .comment-meta > .comment-author > .avatar {
-	border: 2px solid #0068ee;
+	border: 2px solid #1874cd;
 	border-radius: 50%;
 }
 
 .bypostauthor > .comment-body > .comment-meta > .comment-author > .fn {
-	border: 2px solid #0068ee;
+	border: 2px solid #1874cd;
 	display: block;
 	padding: 0.22222222222em;
 }

@@ -31,6 +31,13 @@ Yep, you'll probably want to edit the `sans_footer_credits()` function in `inc/t
 
 == Changelog ==
 
+= 3.0.1 - October 1, 2017 =
+* Fixing some bugs and making some design tweaks. B-)
+	* Fixes bug with double footer credits when infinite scroll is on.
+	* Updates main link color.
+	* Adds serif font to headings.
+	* Increases size of site title for better hierarchy.
+
 = 3.0 - May 28, 2017 =
 * Back to one column. :)
 
