@@ -35,7 +35,7 @@ module.exports = function(grunt) {
 				'Author: David A. Kennedy\n'+
 				'Author URI: https://davidakennedy.com\n'+
 				'Description: A minimalist theme with substance and without the superficial.\n'+
-				'Version: 3.0.1\n'+
+				'Version: 3.0.2\n'+
 				'License: GNU General Public License v2 or later\n'+
 				'License URI: http://www.gnu.org/licenses/gpl-2.0.html\n'+
 				'Text Domain: sans\n'+

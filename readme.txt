@@ -31,6 +31,9 @@ Yep, you'll probably want to edit the `sans_footer_credits()` function in `inc/t
 
 == Changelog ==
 
+= 3.0.2 - October 29, 2017 =
+* Fixing some bugs with font weights. :O
+
 = 3.0.1 - October 1, 2017 =
 * Fixing some bugs and making some design tweaks. B-)
 	* Fixes bug with double footer credits when infinite scroll is on.
